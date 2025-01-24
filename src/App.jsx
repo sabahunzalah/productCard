@@ -1,12 +1,16 @@
 import React from "react";
-// import Card from "./Components/Card/Card";
+import { Routes,Route } from "react-router-dom";
 import ProductPage from "./pages/ProductPage/ProductPage";
+import ProductDetail from "./pages/ProductDetailPage/ProductDetail";
 
 const App = () => {
   return (
     <>
-      {/* <Card /> */}
-      <ProductPage/>
+      <Routes>
+        <Route path="/" element={<ProductPage />} />
+        <Route path="/productDetail" element={<ProductDetail />} />
+      </Routes>
+      
     </>
   );
 };
