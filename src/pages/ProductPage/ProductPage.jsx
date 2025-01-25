@@ -2,7 +2,7 @@ import React from "react";
 import ProductData from "./ProductData";
 import Card from "../../Components/Card/Card";
 import styles from "./ProductSec.module.css";
-import { Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 
 const ProductPage = () => {
   const mensWare = ProductData.filter((category) => {
@@ -29,6 +29,7 @@ const ProductPage = () => {
               <Grid item xs={12} sm={6} md={4} lg={3} key={id}>
                 <Card
                   key={id}
+                  id={data.id} 
                   image={data.image}
                   title={data.title}
                   description={data.description}
@@ -49,6 +50,7 @@ const ProductPage = () => {
               <Grid item xs={12} sm={6} md={4} lg={3} key={id}>
                 <Card
                   key={id}
+                  id={data.id} 
                   image={data.image}
                   title={data.title}
                   description={data.description}
@@ -69,6 +71,7 @@ const ProductPage = () => {
               <Grid item xs={12} sm={6} md={4} lg={3} key={id}>
                 <Card
                   key={id}
+                  id={data.id} 
                   image={data.image}
                   title={data.title}
                   description={data.description}
@@ -89,6 +92,7 @@ const ProductPage = () => {
               <Grid item xs={12} sm={6} md={4} lg={3} key={id}>
                 <Card
                   key={id}
+                  id={data.id} 
                   image={data.image}
                   title={data.title}
                   description={data.description}
