@@ -8,7 +8,8 @@ const App = () => {
     <>
       <Routes>
         <Route path="/" element={<ProductPage />} />
-        <Route path="/productDetail" element={<ProductDetail />} />
+        {/* <Route path="/productDetail" element={<ProductDetail />} /> */}
+        <Route path="/productDetail/:id" element={<ProductDetail />} />
       </Routes>
       
     </>
@@ -16,3 +17,4 @@ const App = () => {
 };
 
 export default App;
+  
